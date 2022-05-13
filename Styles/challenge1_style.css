@@ -1,0 +1,110 @@
+@import url("https://use.typekit.net/yrm2sft.css");
+:root {
+  --blue: #005288;
+  --grey: #a7a9ac;
+  --black: #202020;
+}
+body {
+  font-family: futura-pt, sans-serif;
+  color: var(--grey);
+  background-color: var(--black);
+  margin-left: 2em;
+  margin-right: 2em;
+}
+h1 {
+  font-family: novecento-sans-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  font-size: 4.5em;
+  color: white;
+}
+h3 {
+  font-family: novecento-sans-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  font-size: 3em;
+  color: #57cffa;
+}
+p {
+  font-size: 2em;
+  font-weight: 500;
+}
+header {
+  display: flex;
+  align-items:center;
+  margin: 2em;
+  justify-content: space-between;
+}
+header img {
+  height: 10em;
+  width: auto;
+}
+
+#Earth_miles {
+  color: #57cffa;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.miles_converter {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#earth_mars {
+  height: 2em;
+  width: auto;
+}
+input {
+  background-color: white;
+  font-family: novecento-sans-wide, sans-serif;
+  border-color: white;
+  font-variant-caps:normal;
+  border-style: hidden;
+  border-radius: 15px;
+  padding: 15px 32px;
+  font-size: 1em;
+
+}
+.supplies {
+  display: flex;
+  justify-content: space-around;
+}
+.water {
+  display: block;
+  padding: 2em;
+  
+}
+
+#water_supply {
+  height: 10em;
+  width: 10em;
+}
+#food_supply {
+  height: 10em;
+  width: 10em;
+}
+
+.food {
+  display: block;
+  padding: 2em;
+}
+
+.data_button {
+  background-color: #c0a6f1;
+  font-family: novecento-sans-wide, sans-serif;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+}
+.data_button:hover {
+  background-color: white;
+}
