@@ -27,3 +27,4 @@ let buttons = document.getElementById("data_buttons1");
 buttons.addEventListener("click",function(){
   alert("There is still 30% of food left.");
 });
+
