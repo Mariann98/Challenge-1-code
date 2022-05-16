@@ -1,9 +1,11 @@
 @import url("https://use.typekit.net/yrm2sft.css");
 :root {
-  --blue: #005288;
+  --blue: #57cffa;
   --grey: #a7a9ac;
   --black: #202020;
+  --purple: #c0a6f1;
 }
+
 body {
   font-family: futura-pt, sans-serif;
   color: var(--grey);
@@ -11,91 +13,100 @@ body {
   margin-left: 2em;
   margin-right: 2em;
 }
+
 h1 {
   font-family: novecento-sans-wide, sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-align: left;
   font-size: 4.5em;
   color: white;
 }
+
 h3 {
   font-family: novecento-sans-wide, sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-align: left;
   font-size: 3em;
-  color: #57cffa;
+  color: var(--blue);
 }
+
 p {
   font-size: 2em;
-  font-weight: 500;
 }
+
 header {
   display: flex;
-  align-items:center;
+  align-items: center;
   margin: 2em;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header img {
   height: 10em;
   width: auto;
 }
 
-#Earth_miles {
-  color: #57cffa;
+#earth_miles {
+  color: var(--purple);
   font-size: 2em;
-  font-weight: 500;
 }
 
 .miles_converter {
   display: grid;
-  align-items: center;
   justify-content: center;
-
 }
 
 #earth_mars {
   height: 2em;
   width: auto;
 }
+
 input {
   background-color: white;
   font-family: novecento-sans-wide, sans-serif;
-  border-color: white;
-  font-variant-caps:normal;
   border-style: hidden;
   border-radius: 15px;
   padding: 15px 32px;
   font-size: 1em;
-
 }
+
 .supplies {
   display: flex;
   justify-content: space-around;
 }
-.water {
-  display: block;
-  padding: 2em;
-  
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-#water_supply {
+.col {
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-end;
+}
+
+.stats-img {
   height: 10em;
   width: 10em;
 }
-#food_supply {
-  height: 10em;
-  width: 10em;
-}
 
-.food {
+.stats {
   display: block;
   padding: 2em;
+}
+
+.hidden {
+  display: none;
+}
+
+#water_data {
+  font-size: 3em;
+  font-family: novecento-sans-wide, sans-serif;
+  color: white;
 }
 
 .data_button {
-  background-color: #c0a6f1;
+  background-color: var(--purple);
   font-family: novecento-sans-wide, sans-serif;
   border-radius: 15px;
   color: white;

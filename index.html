@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpaceX ITSI</title>
-    <link rel="shortcut icon" href="Photos\logo.png" />
-    <link href="Styles/challenge1_style.css" rel="stylesheet" />
-    <script src="javascript.js" defer></script>
-  </head>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SpaceX ITSI</title>
+        <link rel="icon" href="Photos\logo.png" />
+        <link href="style/style.css" rel="stylesheet" />
+        <script src="main.js" defer></script>
+      </head>
   <body>
-    <header>
-      <img src="Photos\spacexlogo.png" alt="logo" width="500" />
-      <h1>Interplanetary Transport System Interface</h1>
-    </header>
-    <div class="miles_converter">
-      
-    <h3>Mars miles to Earth miles converter</h3>
-    <div class="wrapper_mars">
-    <p>
-      <img src="Photos/mars.png" id="earth_mars" /><label>Mars miles:</label>
-      <input
-        id="miles"
-        type="number"
-        placeholder="Enter miles"
-        oninput="milesConvert(this.value)"
-        onchange="milesConvert(this.value)"
-      />
-    </p>
-</div>
-<div class="wrapper_earth">
-    <p><img src="Photos/earth.png" id="earth_mars" />Earth miles: <span id="Earth_miles"></span></p>
-  </div>
-  </div>
-    <div class="supplies">
-      <div class="water">
-        <h3>Water supply</h3>
-        <img src="Photos/water.png" alt="water supply icon" id="water_supply" />
-        <button class="data_button" id="data_buttons">View data</button> 
+      <header>
+        <img src="Photos\spacexlogo.png" alt="logo" width="500" />
+        <h1>Interplanetary Transport System Interface</h1>
+      </header>
+      <div class="miles_converter">
+        <h3>Mars miles to Earth miles converter</h3>
+        <div class="wrapper_mars">
+          <p>
+            <img src="Photos/mars.png" id="earth_mars" /><label>Mars miles:</label>
+            <input
+              id="miles"
+              type="number"
+              placeholder="Enter miles"
+              oninput="milesConvert(this.value)"
+              onchange="milesConvert(this.value)"
+            />
+          </p>
+        </div>
+        <div class="wrapper_earth">
+          <p>
+            <img src="Photos/earth.png" id="earth_mars" />Earth miles:
+            <span id="earth_miles"></span>
+          </p>
+        </div>
       </div>
-      <div class="food">
-        <h3>Food supply</h3>
-        <img src="Photos/food.png" alt="food supply icon" id="food_supply" />
-        <button class="data_button" id="data_buttons1">View data</button> 
+      <div class="supplies">
+        <div class="stats">
+          <h3>Water supply</h3>
+          <div class="row">
+            <img class="stats-img" src="Photos/water.png" alt="water supply icon" />
+            <div class="col">
+              <div>
+                <div class="hidden" id="water_data">56%</div>
+              </div>
+              <button class="data_button" id="data_buttons">View data</button>
+            </div>
+          </div>
+        </div>
+        <div class="stats">
+          <h3>Food supply</h3>
+          <img class="stats-img" src="Photos/food.png" alt="food supply icon" />
+          <button class="data_button" id="data_buttons1">View data</button>
+        </div>
       </div>
-    </div>
   </body>
 </html>
